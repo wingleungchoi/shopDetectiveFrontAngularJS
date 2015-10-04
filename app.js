@@ -1,2 +1,2 @@
 // Module
-var shopDetectiveApp = angular.module('weatherApp',['ngRoute', 'ngResource']); 
+var shopDetectiveApp = angular.module('shopDetectiveApp',['ngRoute', 'ngResource']); 

@@ -1,8 +1,13 @@
 // Controllers
-shopDetectiveApp.controller('homeController',['$scope', '$location', 'companyQueryService',
-function($scope, $location, companyQueryService){
+shopDetectiveApp.controller('homeController',['$scope', '$location', 'companyQueryService', 'companyService',
+function($scope, $location, companyQueryService, companyService){
+  $scope.keyword           = companyService.keyword;
+  $scope.keywordType       = companyService.keywordType;
+  $scope.numberOfCompanies = companyService.numberOfCompanies;
   
-
+  $scope.submit = function(){
+    $location.path('/searchResult');
+  };
   
 }]);
 
