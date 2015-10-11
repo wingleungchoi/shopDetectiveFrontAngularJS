@@ -7,4 +7,9 @@ shopDetectiveApp.config(function($routeProvider){
     controller: 'homeController'
   })
 
+  .when('/search', {
+    templateUrl: 'pages/search-result.hmtl',
+    controller: 'searchResultController'
+  })
+
 });

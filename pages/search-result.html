@@ -1,0 +1,19 @@
+<p>
+  <a href="#/">Go back to search</a>
+</p>
+Search Result of keyword: {{keyword}}, type: {{keywordType}}
+<hr/>
+<div ng-repeat="c in companyQueryResult">
+  <div class="row">
+    <div class="col-md-12">
+      {{c}}
+    </div>
+  </div>
+</div>
+<!--div ng-repeat="w in weatherResult.list">
+  <div class="row">
+    <div class="col-md-12">
+      <weather-report weather-day="w" convert-to-standard="convertToFahrenheit(daytimeTemp)" convert-to-date="convertToDate(dt)" date-format="MMM d, y">
+    </div>
+  </div>
+</div-->
